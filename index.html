@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flames App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>SAKSHAM PRAVESH — MHT CET 2025 Counselling Guidance by Shreyash Suryawanshi</title>
+    <meta name="description" content="SAKSHAM PRAVESH provides expert MHT CET 2025 counselling guidance: registration, college selection, document verification, and admission strategy. Book a session with Shreyash Suryawanshi." />
+    <meta name="theme-color" content="#0ea5a6" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SAKSHAM PRAVESH — MHT CET 2025 Counselling" />
+    <meta property="og:description" content="Expert counselling for MHT CET 2025. Packages, booking, resources, and personalized support." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sakshampravesh.example" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics (optional via env) -->
+    <script>
+      (function(){
+        const GA_ID = (window.localStorage && localStorage.getItem('GA_ID')) || null;
+        const envId = null; // placeholder for build-time injection
+        const id = envId || GA_ID || (typeof importMeta !== 'undefined' && importMeta.env && importMeta.env.VITE_GA_ID) || null;
+        if (id) {
+          var s=document.createElement('script'); s.async=true; s.src=`https://www.googletagmanager.com/gtag/js?id=${id}`; document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);} window.gtag = gtag;
+          gtag('js', new Date()); gtag('config', id);
+        }
+      })();
+    </script>
   </head>
-  <body>
+  <body class="bg-slate-950 text-slate-100">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
